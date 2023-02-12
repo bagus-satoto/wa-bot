@@ -40,7 +40,7 @@ var can_used = ['6281229904389@c.us', '6283164600533@c.us']
 var chats = ['6282136094607--1620437196@g.us','6282136094607-1558389407@g.us']
 var welcomeStatus = true
 
-// var chats = ['6281229904389-1558389407@g.us'] // Gabut
+var chats = ['6281229904389-1558389407@g.us'] // Gabut
 
 const welcome = async (client, chat, whos) => {
     if (welcomeStatus) {
