@@ -97,16 +97,16 @@ function start(client) {
                 await queue.add(_ => welcome(client, chat, `@${who.replace('@c.us','')}`))
 
 
-                // const data = fs.readFileSync('grups.txt', 'utf8')
-                // if (!data.includes(infogrup.title)) {
-                //     fs.open('grups.txt', 'a', 666, (e, id) => {
-                //         fs.write(id, `${infogrup.title} ::: ${participantChangedEvent.chat}` + os.EOL, null, 'utf8', function () {
-                //             fs.close(id, function () {
-                //                 // console.log('file is updated');
-                //             });
-                //         });
-                //     });
-                // }
+                const data = fs.readFileSync('grups.txt', 'utf8')
+                if (!data.includes(infogrup.title)) {
+                    fs.open('grups.txt', 'a', 666, (e, id) => {
+                        fs.write(id, `${infogrup.title} ::: ${participantChangedEvent.chat}` + os.EOL, null, 'utf8', function () {
+                            fs.close(id, function () {
+                                // console.log('file is updated');
+                            });
+                        });
+                    });
+                }
             } else if (participantChangedEvent.action == 'remove') {
                 await queue.add(_ => client.sendText(participantChangedEvent.chat, 'Selamat tinggal kawan.Semoga hari-harimu menyenangkan.'))
             }
