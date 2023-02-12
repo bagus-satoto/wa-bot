@@ -1,0 +1,8 @@
+node_modules
+logs
+config.json
+*.lock
+# managed by open-wa
+**.data.json
+**.node-persist**
+# end managed by open-wa
