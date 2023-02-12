@@ -37,8 +37,9 @@ Link pendaftaran juga sudah admin cantumkan pada Deskripsi Grup WA ini`
 
 var can_used = ['6281229904389@c.us', '6283164600533@c.us']
 
-var chats = ['6282136094607--1620437196@g.us','6281229904389-1558389407@g.us']
+var chats = ['6282136094607--1620437196@g.us','6282136094607-1558389407@g.us']
 var welcomeStatus = true
+
 // var chats = ['6281229904389-1558389407@g.us'] // Gabut
 
 const welcome = async (client, chat, whos) => {
@@ -46,7 +47,7 @@ const welcome = async (client, chat, whos) => {
         await client.sendTextWithMentions(chat, `${whos} selamat datang di amikom`)
         await client.sendText(chat, 'Silahkan daftar psu dan kuliah umum di link bawah ini')
         await client.sendLinkWithAutoPreview(chat, "https://www.instagram.com/p/CC5bHTYJMqU/?utm_source=ig_web_copy_link", longMsg)
-        await client.sendLinkWithAutoPreview(chat, "http://wa.me/6283164600533", `Jika ada pertanyaan bisa langsung menuju link ini http://wa.me/6282136094607
+        await client.sendLinkWithAutoPreview(chat, "http://wa.me/6282136094607", `Jika ada pertanyaan bisa langsung menuju link ini http://wa.me/6282136094607
 *Catatan:* Perkenalkan diri dulu diajak ngobrol baru tanya tanya.`)
         await client.sendText(chat, 'Boleh memperkenalkan diri terlebih dahulu di grup.Supaya lebih akrab sama yang lain.')
     }
